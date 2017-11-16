@@ -4,9 +4,6 @@
 
 require_once( 'php/app.php' );
 
-//echo '<pre>';
-///print_r($seo->rssList());
-
 include_once 'RestService/Server.php';
 include_once 'RestService/Client.php';
 include_once 'RestService/InternalClient.php';
