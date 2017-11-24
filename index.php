@@ -10,8 +10,8 @@ include_once 'RestService/InternalClient.php';
 use RestService\Server;
 
 Server::create('/')
-->addGetRoute('list', function(){
+->addGetRoute('list', function($fromNewsId){
 	global $seo;
-	return $seo->listAPI();
+	return $seo->listAPI($fromNewsId);
 })
 ->run();

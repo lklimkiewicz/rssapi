@@ -256,7 +256,7 @@ class Client
     	//return json_encode($json);
     	
     	
-        if (!is_string($json)) $json = json_encode($json);
+        if (!is_string($json)) $json = json_encode($json, JSON_UNESCAPED_UNICODE );
 
         
         
